@@ -1,0 +1,5 @@
+print('My English name is Ricardo')
+print(1+2-3*4/5)
+print('第一行,', end='')
+print('也是第一行')
+print('这是第一行\n这是第二行')
