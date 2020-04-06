@@ -4,7 +4,7 @@ stu_grade = []
 grade_table = []
 with open('report.txt',encoding='utf-8')as f:
     for index,line in enumerate(f):
-        line = line.strip() # 去掉空格
+        line = line.strip() # 去掉每行的回车
         if index == 0:
             a ='名次 '+ line+ ' 总分 平均分'
             header = [a.split()]
