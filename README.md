@@ -12,7 +12,7 @@
 打开文件时，地址使用相对路径
 (可选)如果记录文件不存在，就自动创建一个文件，避免程序报错跳出
 结果展示：
-![image]（https://github.com/xnsy/xnsy/blob/Final-Exam/Readme/7-0.png）
+![image](https://github.com/xnsy/xnsy/blob/Final-Exam/Readme/7-0.png)
 
  
 
