@@ -4,7 +4,7 @@ import requests
 def Guess_Number():
     result = requests.get('https://python666.cn/cls/number/guess/').json()
     Game_times = 0
-    # print(result)
+    print(result)
     while True:
         Game_times += 1
         try:
@@ -26,12 +26,11 @@ def Repeated_game(User_Name,Count_Round,Count_Times,Least_Times):
         count = Guess_Number()
         Count_Times += count
         if count < Least_Times:
-            Least_Times = 1 #一次猜中
             Least_Times = count
         Count_Round += 1
         print("%s已经进行了%d轮游戏，共猜了%d次,最少%d次猜对,平均每一轮猜了%.2f次"
               % (User_Name, Count_Round, Count_Times, Least_Times,Count_Times/Count_Round))
-        choice = input("是否继续游戏（请输入'是'继续游戏，其他输入退出本次游戏）:")
+        choice = input("是否继续游戏（请输入'是'继续游戏，其他输入退出本次游戏）:\n")
     return ([User_Name, Count_Round, Count_Times, Least_Times, Count_Times/Count_Round])
 # 依据用户名，返回用户游戏记录，没有就新建
 def Check_Record(user_name):
